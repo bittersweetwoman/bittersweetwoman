@@ -4,6 +4,69 @@
 	License: pixelarity.com/license
 */
 
+const header = document.getElementById('header');
+
+const modal = document.getElementById('slider-modal');
+const modalButton = document.getElementById('excerpt-button');
+  
+const inner = document.getElementsByClassName('carousel-inner');
+const children = inner[0].children;
+
+const left = document.getElementById('left-carousel-control');
+const right = document.getElementById('right-carousel-control');
+
+const close = document.getElementById('close-modal');
+
+let i = 0;
+
+console.log(children[i])
+
+// let max = children.length - 1;
+
+modalButton.addEventListener('click', e => {
+    modal.style.display = 'flex';
+    header.style.display = 'none';
+    children[i].style.display = 'block';
+    
+})
+
+right.addEventListener('click', e => {
+    if(i < 4){
+        children[i].style.display = 'none';
+        i++
+        children[i].style.display = 'block';
+    }else {
+        children[i].style.display = 'none';
+        i = 0;
+        children[i].style.display = 'block';
+    }
+})
+
+left.addEventListener('click', e => {
+    if(i > 0 ){
+        children[i].style.display = 'none';
+        i--
+        children[i].style.display = 'block';
+    }
+    else{
+        children[i].style.display = 'none';
+      i = 4;
+      children[i].style.display = 'block';
+    }
+})
+
+close.addEventListener('click', e => {
+    modal.style.display = 'none';
+    header.style.display = '';
+
+
+})
+
+console.log(inner[0].children); 
+
+
+
+
 (function($) {
 
     var $window = $(window),
