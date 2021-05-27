@@ -3098,6 +3098,11 @@ body.is-preload #banner:after {
 
 }
 
+#three p {
+    font-size: 1.25em;
+
+}
+
 #three-mobile {
     display: none;
 }
