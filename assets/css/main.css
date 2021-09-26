@@ -2601,6 +2601,10 @@ button:disabled,
     right: 0;
 }
 
+#header nav>ul:nth-child(4):hover{
+ color: white;
+}
+
 .dropotron {
     background: #1d2726;
     color: #fff;
@@ -3765,6 +3769,62 @@ body.is-preload #banner:after {
     left: 0;
     overflow: hidden;
 }
+
+#pre-order-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 2000;
+    background-color: rgba(255, 255, 255, 0.562);
+    /* opacity: .7; */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#pre-order-modal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+#pre-order-img {
+    background-size: cover;
+    width: 50%;
+    height: auto;
+}
+
+#pre-order-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 3000;
+    
+
+}
+
+
+
+
 
 #header-carousel {
     width: 60%;

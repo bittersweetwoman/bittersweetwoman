@@ -8,6 +8,8 @@ const header = document.getElementById('header');
 
 const modal = document.getElementById('slider-modal');
 const modalButton = document.getElementById('excerpt-button');
+
+const preOrder = document.getElementById('pre-order-wrapper');
   
 const inner = document.getElementsByClassName('carousel-inner');
 const children = inner[0].children;
@@ -19,7 +21,7 @@ const close = document.getElementById('close-modal');
 
 let i = 0;
 
-console.log(children[i])
+// console.log(children[i])
 
 // let max = children.length - 1;
 
@@ -62,10 +64,17 @@ close.addEventListener('click', e => {
 
 })
 
-console.log(inner[0].children); 
+// console.log(inner[0].children); 
 
+setTimeout(() => {
+    preOrder.style.display = "flex";
+}, 3000);
 
-
+window.addEventListener('click', e =>{
+    if(preOrder.style.display = "flex"){
+        preOrder.style.display = "none";
+    }
+})
 
 (function($) {
 
