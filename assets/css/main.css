@@ -3781,6 +3781,7 @@ body.is-preload #banner:after {
     top: 0;
     left: 0;
     overflow: hidden;
+    margin:0;
 }
 #pre-order-modal {
     position: relative;

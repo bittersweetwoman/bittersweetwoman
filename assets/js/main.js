@@ -21,61 +21,6 @@ const close = document.getElementById('close-modal');
 
 let i = 0;
 
-// console.log(children[i])
-
-// let max = children.length - 1;
-
-modalButton.addEventListener('click', e => {
-    modal.style.display = 'flex';
-    header.style.display = 'none';
-    children[i].style.display = 'block';
-    
-})
-
-right.addEventListener('click', e => {
-    if(i < 4){
-        children[i].style.display = 'none';
-        i++
-        children[i].style.display = 'block';
-    }else {
-        children[i].style.display = 'none';
-        i = 0;
-        children[i].style.display = 'block';
-    }
-})
-
-left.addEventListener('click', e => {
-    if(i > 0 ){
-        children[i].style.display = 'none';
-        i--
-        children[i].style.display = 'block';
-    }
-    else{
-        children[i].style.display = 'none';
-      i = 4;
-      children[i].style.display = 'block';
-    }
-})
-
-close.addEventListener('click', e => {
-    modal.style.display = 'none';
-    header.style.display = '';
-
-
-})
-
-// console.log(inner[0].children); 
-
-setTimeout(() => {
-    preOrder.style.display = "flex";
-}, 3000);
-
-window.addEventListener('click', e =>{
-    if(preOrder.style.display = "flex"){
-        preOrder.style.display = "none";
-    }
-})
-
 (function($) {
 
     var $window = $(window),
@@ -172,6 +117,51 @@ window.addEventListener('click', e =>{
 
 })(jQuery);
 
-// const doc = document;
+modalButton.addEventListener('click', e => {
+    modal.style.display = 'flex';
+    header.style.display = 'none';
+    children[i].style.display = 'block';
+    
+})
 
-// const img = 
+right.addEventListener('click', e => {
+    if(i < 4){
+        children[i].style.display = 'none';
+        i++
+        children[i].style.display = 'block';
+    }else {
+        children[i].style.display = 'none';
+        i = 0;
+        children[i].style.display = 'block';
+    }
+})
+
+left.addEventListener('click', e => {
+    if(i > 0 ){
+        children[i].style.display = 'none';
+        i--
+        children[i].style.display = 'block';
+    }
+    else{
+        children[i].style.display = 'none';
+      i = 4;
+      children[i].style.display = 'block';
+    }
+})
+
+close.addEventListener('click', e => {
+    modal.style.display = 'none';
+    header.style.display = '';
+
+
+})
+
+setTimeout(() => {
+    preOrder.style.display = "flex";
+}, 3000);
+
+window.addEventListener('click', e =>{
+    if(preOrder.style.display = "flex"){
+        preOrder.style.display = "none";
+    }
+})
