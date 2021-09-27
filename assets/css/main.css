@@ -2313,7 +2313,7 @@ button:disabled,
 }
 
 @media screen and (max-width: 480px){
-    button {
+    .button {
         width: 50%;
     }
 }
@@ -3819,10 +3819,6 @@ body.is-preload #banner:after {
 
 }
 
-
-
-
-
 #header-carousel {
     width: 60%;
     height: 100%;
@@ -3926,6 +3922,10 @@ body.is-preload #banner:after {
 
     #header-carousel {
         width: 70%;
+    }
+
+    #pre-order-img {
+        width: 60em;
     }
    
 }
@@ -4088,6 +4088,11 @@ body.is-preload #banner:after {
     #header-carousel {
         width: 90%;
     }
+
+    #pre-order-img {
+        width: 50em;
+    }
+   
 } 
 
 @media screen and (max-width: 600px) {
@@ -4118,7 +4123,26 @@ body.is-preload #banner:after {
     #header-carousel {
         width: 95%;
     }
+
+    
 }
+
+@media screen and (max-width: 500px) {
+    #pre-order-img {
+        width: 40em;
+        margin-top: -2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #pre-order-img {
+        width: 35em;
+        margin-top: -5em;
+    }
+}
+
+
+
 
 
 /* .carousel-control i { margin-top: 170px; } */
