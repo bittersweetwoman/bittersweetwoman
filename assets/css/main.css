@@ -2312,6 +2312,8 @@ button:disabled,
     opacity: 0.25;
 }
 
+
+
 @media screen and (max-width: 480px){
     .button {
         width: 50%;
