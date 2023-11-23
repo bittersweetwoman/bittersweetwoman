@@ -2887,6 +2887,7 @@ button:disabled,
     padding: 5em 0;
     position: relative;
     text-align: center;
+
 }
 
 #banner:after {
@@ -3070,7 +3071,11 @@ body.is-preload #banner:after {
 
 /* Two */
 
-#two {
+#two-mobile {
+    display: none;
+}
+
+#two #two-fs {
     margin-top: -4em;
 }
 
@@ -3086,7 +3091,7 @@ body.is-preload #banner:after {
     text-align: center;
 }
 
-#two p {
+#two #two-fs p {
     font-size: 1.25em;
     line-height: 1.75em;
     margin: -0.5em 0 0 0;
@@ -3129,13 +3134,24 @@ body.is-preload #banner:after {
         padding-right: 0;
         padding: 1em;
     }
+
+    #two-fs {
+        display: none;
+    }
+
+    #two-mobile {
+        display: flex;
+        text-align: center;
+        padding: 1em;   
+     }
+    
     #two {
         margin-top: -10em;
     }
     .two-inner {
         flex-direction: column;
     }
-    #two .book-cover {
+    #two.book-cover {
         margin-bottom: 4em;
     }
 
@@ -3179,10 +3195,7 @@ body.is-preload #banner:after {
 }
 
 @media screen and (max-width: 500px){
- 
-    #coverImg{
-        margin-left: -1.5em;
-    } 
+
    }
 
    /* THREE */
@@ -3430,7 +3443,7 @@ body.is-preload #banner:after {
     #one p {
         font-size: 1em;
     }
-    #two p {
+    #two #two-fs p {
         font-size: 1em;
     }
     #one .inner {
@@ -3441,7 +3454,7 @@ body.is-preload #banner:after {
         text-align: center;
         width: 35em;
     }
-    #two .inner {
+    #two #two-fs .inner {
         display: block;
         margin: 0 auto;
         max-width: 100%;
@@ -3455,7 +3468,7 @@ body.is-preload #banner:after {
         max-width: 100%;
         width: 30em;
     }
-    #two .device {
+    #two #two-fs .device {
         display: block;
         margin: 4em auto 0 auto;
         max-width: 100%;
@@ -3935,6 +3948,10 @@ body.is-preload #banner:after {
 }
 
 @media screen and (max-width: 1300px) {
+     #banner {
+        margin-bottom: 2em;
+    }
+   
     #header-carousel .carousel-inner #carousel-img-one {
         background-size: 65% ; 
     }
@@ -4009,7 +4026,7 @@ body.is-preload #banner:after {
 } 
 
 @media screen and (max-width: 1000px) {
-   
+
     #header-carousel .carousel-inner #carousel-img-one {
         background-size: 80% ; 
     }
